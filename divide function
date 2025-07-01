@@ -1,0 +1,22 @@
+// divide numners using functions 
+#include <stdio.h>
+#include <stdlib.h>
+
+float divide( float a, float b){
+    
+    if ( b  == 0){
+        printf("ERROR : division by zero \n ");
+        return 0;
+    }
+    return a/b;
+}
+float main (){
+    float a, b, result;
+    printf("Enter a - numerator :");
+    scanf("%f", &a);
+    printf("Enter b - denominator :");
+    scanf("%f",&b);
+    result = divide(a , b);
+    printf("the division of %f and %f is : %f \n", a,b, result);
+    return 0 ;
+}
