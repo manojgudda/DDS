@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int multiply(int a , int b){
+    int product = a * b ;
+    return product;
+}
+int main() {
+    int a ;
+    int b ;
+    printf("Enter a value :");
+    scanf("%d",&a);
+    printf("Enter b value :");
+    scanf("%d",&b);
+
+    multiply(a,b);
+    printf("the product or multiplication is :%d\n",multiply(a,b));
+
+    return 0;
+}
