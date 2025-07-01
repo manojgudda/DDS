@@ -1,0 +1,11 @@
+ // print name using function 
+#include <stdio.h>
+#include <stdlib.h>
+
+int printName(){
+    printf("hello world \n");
+}
+int main(){
+    printName();
+    return 0;
+}
