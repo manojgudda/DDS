@@ -1,0 +1,24 @@
+  // add numbers using function 
+#include <stdio.h>
+#include <stdlib.h>
+
+int addition(int a , int b){
+    int sum = a + b;
+}
+int main() {
+    // add numbers using function 
+    // int addition(int a , int b)
+
+    int a ;
+    int b ;
+    printf("enter a value :");
+    scanf("%d",&a);
+    printf("enter b value :");
+    scanf("%d",&b);
+
+    addition(a,b);
+    printf("the sum is : %d\n", addition(a,b));
+
+    
+    return 0;
+}
