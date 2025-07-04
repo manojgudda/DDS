@@ -2,23 +2,49 @@
 #include <iostream>
 
 int main() {
-    using namespace std;// to stop using std infront of all cout
+    using namespace std;  // to stop using std infront of all cout
     
    
     int n ;
-    cout << " enter the size of array :";// cout ..printf 
-    cin >> n;// cin... scanf
+    cout << " enter the size of array :";  // cout ..printf 
+    cin >> n;   // cin... scanf
   
-    int *arr = new int [n];//create new dynamic array 
-    for (int i = 0;i < n;i++){//  loop for scaning in puts  the array 
-        cout<< " enter the value of arr ["<< i <<"]index";// showing 
-        cin >> arr[i];// scaning in puts  the array
+    int *arr = new int [n];    //create new dynamic array 
+    for (int i = 0;i < n;i++){   //  loop for scaning in puts  the array 
+        cout<< " enter the value of arr ["<< i <<"]index";    // showing 
+        cin >> arr[i];    // scaning in puts  the array
     }
   
     cout<< endl << "enter the elementd are :"<< endl;
-    for (int i = 0 ; i < n; i ++){//loop for printing in puts  the array 
-        cout << arr [i] << endl;// printing array values 
+    for (int i = 0 ; i < n; i ++){    //loop for printing in puts  the array 
+        cout << arr [i] << endl;     // printing array values 
     }
+// new size array 
+    int n1;
+    cout<<"enter the new size :";
+    cin>> n1;
+    int *arr1 = new int[n1];
+    // copy //
+    for (int i = 0; i < n1; i++ ){
+        arr1[i] = arr[i];
+    }
+    // loop to verify the new size is greater than old array //
+    if (n1 > n){
+        for(int i = n; i < n1 ;i ++){
+            cout << "enter the element of arr["<< i <<"] index :";
+            cin >> arr1[i];
+        }
+        
+    }else {
+            cout<<"error in new array size ";
+       return 0;
+       }
+     cout << "elements in new array = ";
+    for (int i = 0;  i < n1; i++){
+        cout<<arr1[i]<<endl;
+    }
+   
     
-    return 0;// ending  the code 
-}
+    
+    return 0;     // ending  the code 
+} 
