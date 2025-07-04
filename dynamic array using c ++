@@ -1,0 +1,24 @@
+
+#include <iostream>
+
+int main() {
+    using namespace std;// to stop using std infront of all cout
+    
+   
+    int n ;
+    cout << " enter the size of array :";// cout ..printf 
+    cin >> n;// cin... scanf
+  
+    int *arr = new int [n];//create new dynamic array 
+    for (int i = 0;i < n;i++){//  loop for scaning in puts  the array 
+        cout<< " enter the value of arr ["<< i <<"]index";// showing 
+        cin >> arr[i];// scaning in puts  the array
+    }
+  
+    cout<< endl << "enter the elementd are :"<< endl;
+    for (int i = 0 ; i < n; i ++){//loop for printing in puts  the array 
+        cout << arr [i] << endl;// printing array values 
+    }
+    
+    return 0;// ending  the code 
+}
