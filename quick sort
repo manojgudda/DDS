@@ -1,0 +1,34 @@
+#include <iostream> 
+using namespace std;
+
+#include < algorithm >
+int partition( int arr[], int start , int end ){
+    int pivot = arr [end];
+    int j = start -1;
+    for (int i = start ; i < end ; i++ ){
+        if (arr[i] < pivot ){
+            j++;
+            swap (arr[j],arr[i]);
+        }
+    }
+    swap (arr[j + 1], arr [end]);
+    return j+1;
+}
+
+
+void qs (int arr[],int start , int end){
+    if (start < end ){
+        int pivotindex = partition (arr , start , end );
+        qs (arr ,start , firstindex - 1);
+        qs(arr,pivotindex + 1  , end);
+        
+    }
+    
+}
+
+int main (){
+    int arr []={2,5,9,3,6,10};
+    int n = sizeof (arr) / sizeof (arr[]);
+    qs (arr,0,n-1);
+    for(int i )
+}
