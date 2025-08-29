@@ -13,8 +13,10 @@ for ( int val : arr){
     cout<<val;
 }
 
-  #include <iostream>
+ #include <iostream>
 #include <vector>
+#include <stack>
+#include <queue>
 
 using namespace std;
 
@@ -33,11 +35,47 @@ int main (){
   
   cout<<"size of the array = "<<arr.size()<<endl;
   
-  String lenght = arr.size() - 1;
-  
-  cout << lenght ;
+
   
   for (int val : arr){
       cout<<val<<" "<<endl;
   }
+  
+  cout << "\nstack" << endl;
+      
+      stack<int>st;
+      st.push(10);
+      st.push(20);
+      st.push(30);
+      st.push(40);
+      st.push(50);
+      
+      while(!st.empty()){
+          cout<<st.top()<<endl;
+          st.pop();
+      }
+      cout << "\nqueue" << endl;
+      
+      queue<int>q;
+      
+      q.push(10);
+      q.push(20);
+      q.push(30);
+      q.push(40);
+      q.push(50);
+      
+      q.pop();
+     
+     cout << q.empty()<<endl;
+     cout<<q.back()<<endl;
+     cout<<q.front()<< endl;
+     cout<<q.size()<<endl;
+     while(!q.empyt()){
+         cout<<q.front();
+         q.pop;
+     }
+      
+      cout << "elments at fornt of queue :" <<q.front()<< endl;
+      cout<< " elments at end of queue :"<<q.back()<<endl;
+ 
 }
